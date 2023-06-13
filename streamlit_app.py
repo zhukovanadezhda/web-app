@@ -8,7 +8,7 @@ search_button = st.sidebar.button("Search")
 
 if search_button:
     try:
-        req_text = fc.call_wiki(req)
+        req_text = fc.call_wiki(req.strip())
         st.title(f"{req}")
         st.write(req_text)
     except:
