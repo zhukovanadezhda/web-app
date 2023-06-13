@@ -13,9 +13,11 @@ if search_button:
         st.write(req_text)
     except:
         st.title(f"{req}")
-        st.write(f"Sorry! I don't have any information about {req}")
+        st.header("Sorry!")
+        st.write(f"I don't have any information about {req}")
 else:
     st.title(f"Ooops...")
+    st.header("Sorry!")
     st.write("You have to provide a request!")
     
     
