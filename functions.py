@@ -15,6 +15,7 @@ def call_wiki(req):
     data = response.json()
 
     page_id = next(iter(data["query"]["pages"]))
-    content = data["query"]["pages"][page_id]["extract"]
+    content = data["query"]["pages"][page_id]
+    #["extract"]
 
     return content
